@@ -8,12 +8,14 @@ import Quizes from "./components/Quizes/Quizes";
 import Blog from "./components/Blog/Blog";
 // import { element } from "prop-types";
 import Home from "./components/Home/Home";
+import Error from "./components/Error/Error";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <Error></Error>,
       children: [
         {
           path: "/",

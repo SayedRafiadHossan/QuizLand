@@ -2,7 +2,7 @@ import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
 import Main from "./components/Main/Main";
 import Topics from "./components/Topics/Topics";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Statistics from "./components/Statistics/Statistics";
 import Quizes from "./components/Quizes/Quizes";
 import Blog from "./components/Blog/Blog";

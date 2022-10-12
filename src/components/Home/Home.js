@@ -21,9 +21,9 @@ const Home = () => {
                 <img className="w-full rounded-lg" src={img} alt="" />
               </figure>
             </div>
-            <div >
-            <div className="flex justify-center items-center m-10">
-        <div className="w-[60%] mr-12 p-10 pt-20">
+            <div>
+            <div className="md:flex justify-center items-center m-10">
+        <div className="md:w-[60%] mr-12 p-10 pt-20">
           <h1 className="text-5xl font-extrabold dark:text-white">
              Quiz Contest in QuizLand
           </h1>
@@ -44,7 +44,7 @@ const Home = () => {
                 <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Quiz Topics</button>
           </Link>
         </div>
-        <figure className="w-[40%]">
+        <figure className="md:w-[40%]">
           <img className="w-full" src={img2} alt="" />
         </figure>
       </div>
@@ -57,7 +57,7 @@ const Home = () => {
     <footer class="p-4 bg-gray-50 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 my-2">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">@Copyright™</a>. All Rights Reserved.
         </span>
-        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        <ul class="md:flex md:flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-5">
             <li>
                 <Link to='/' class="mr-4 hover:underline md:mr-6 ">About</Link>
             </li>

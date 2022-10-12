@@ -6,19 +6,22 @@ const QuizCart = ({ quiz }) => {
 
   return (
     <div>
-      <section className=" p-4 w-[400px] shadow-xl rounded-lg">
-        <figure className="">
+      <section className="sm:p-4 sm:w-1/2 shadow-xl rounded-lg my-10">
+        <figure>
           <img
-            className="w-[350px] h-[350px] mx-auto bg-slate-200 rounded-lg mb-4"
+            className="w-full h-auto mx-auto bg-slate-200 rounded-lg mb-4"
             src={logo}
             alt=""
           />
         </figure>
-        <div className="w-[350px] mx-auto">
-          <div className="flex justify-between items-center w-[350px]">
+        <div className="w-auto mx-auto">
+          <div className="flex justify-between items-center w-auto">
             <p className="text-xl font-bold">{name}</p>
             <Link to={`/cart/${id}`}>
-              <button className="text-white mt-2 ml-2 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+              <button
+                type="button"
+                class="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              >
                 Start Quiz
               </button>
             </Link>

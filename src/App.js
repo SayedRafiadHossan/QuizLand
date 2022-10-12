@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import { element } from 'prop-types';
+import Home from './components/Home/Home';
 
 
 function App() {
@@ -16,6 +18,10 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        },
         {
           path: '/Topics',
           loader: async() => {

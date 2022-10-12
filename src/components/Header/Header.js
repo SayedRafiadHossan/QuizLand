@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img3 from './../../Images/5692030.png'
 
 const Header = () => {
     return (
         <div>
-            <nav class="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+            <div class="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
                 <div class="container flex flex-wrap justify-between items-center mx-auto">
                     <Link to="#" class="flex items-center">
-                        <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-10" alt="Flowbite Logo"/>
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">QuizeLand</span>
+                        <img src={img3} class="mr-3 h-6 sm:h-10" alt="..."/>
+                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">QuizLand</span>
                     </Link>
                 <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex justify-center items-center ml-3 text-gray-400 rounded-lg md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-gray-400 dark:hover:text-white dark:focus:ring-gray-500" aria-controls="navbar-solid-bg" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
@@ -31,31 +32,7 @@ const Header = () => {
                     </ul>
                 </div>
                 </div>
-
-
-  {/* Footer Start */}
-
-  {/* <div>
-<footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">@Copyright™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <Link to='/' class="mr-4 hover:underline md:mr-6 ">About</Link>
-        </li>
-        <li>
-            <Link to='/' class="mr-4 hover:underline md:mr-6">Privacy Policy</Link>
-        </li>
-        <li>
-            <Link to='/' class="mr-4 hover:underline md:mr-6">Licensing</Link>
-        </li>
-        <li>
-            <Link to='/' class="hover:underline">Contact</Link>
-        </li>
-    </ul>
-</footer>
-  </div> */}
-            </nav>
+            </div>
         </div>
     );
 };

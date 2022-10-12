@@ -9,7 +9,7 @@ const Quizes = () => {
   const { name } = quizName;
   return (
     <div>
-      <div className="mt-8 mx-[150px]">
+      <div className="mt-8 xl:mx-20">
         <h3 className="text-center text-3xl font-bold text-blue-500">
           Quiz of {name}
         </h3>

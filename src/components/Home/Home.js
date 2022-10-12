@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "./../../Images/ezgif.com-gif-maker.jpg";
 import img2 from "./../../Images/92377-quiz-mode.gif";
+import Topics from "../Topics/Topics";
 
 const Home = () => {
   return (
@@ -17,13 +18,13 @@ const Home = () => {
         <div className="text-center mt-2">
           <button
             type="button"
-            class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Sign up for free{" "}
           </button>
           <button
             type="button"
-            class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
           >
             Learn More
           </button>
@@ -33,6 +34,9 @@ const Home = () => {
         <figure className="m-10">
           <img className="w-full rounded-lg" src={img} alt="" />
         </figure>
+      </div>
+      <div>
+        <Topics></Topics>
       </div>
       <div>
         <div className="md:flex justify-center items-center m-10">
@@ -64,7 +68,7 @@ const Home = () => {
             >
               <button
                 type="button"
-                class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 Quiz Topics
               </button>
@@ -79,32 +83,32 @@ const Home = () => {
       {/* Footer Start */}
 
       <div>
-        <footer class="p-4 bg-gray-50 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 my-2">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <footer className="p-4 bg-gray-50 rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 my-2">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{" "}
-            <a href="https://flowbite.com/" class="hover:underline">
+            <a href="https://flowbite.com/" className="hover:underline">
               @Copyright™
             </a>
             . All Rights Reserved.
           </span>
-          <ul class="md:flex md:flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-5">
+          <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400">
             <li>
-              <Link to="/" class="mr-4 hover:underline md:mr-6 ">
+              <Link to="/" className="mr-6 hover:underline md:mr-6 ">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/" class="mr-4 hover:underline md:mr-6">
+              <Link to="/" className="mr-6 hover:underline md:mr-6">
                 Privacy Policy
               </Link>
             </li>
             <li>
-              <Link to="/" class="mr-4 hover:underline md:mr-6">
+              <Link to="/" className="mr-6 hover:underline md:mr-6">
                 Licensing
               </Link>
             </li>
             <li>
-              <Link to="/" class="hover:underline">
+              <Link to="/" className=" hover:underline">
                 Contact
               </Link>
             </li>

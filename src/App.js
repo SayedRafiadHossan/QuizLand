@@ -1,11 +1,12 @@
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import Main from "./components/Main/Main";
 import Topics from "./components/Topics/Topics";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import Statistics from "./components/Statistics/Statistics";
-import Quiz from "./components/Quiz/Quiz";
+import Quizes from "./components/Quizes/Quizes";
 import Blog from "./components/Blog/Blog";
-import { element } from "prop-types";
+// import { element } from "prop-types";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       children: [
         {
           path: "/",
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
           element: <Home></Home>,
         },
         {
@@ -27,6 +31,9 @@ function App() {
         },
         {
           path: "/statistics",
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
           element: <Statistics></Statistics>,
         },
         {
@@ -40,7 +47,7 @@ function App() {
               `https://openapi.programming-hero.com/api/quiz/${params.id}`
             );
           },
-          element: <Quiz></Quiz>,
+          element: <Quizes></Quizes>,
         },
       ],
     },

@@ -7,7 +7,7 @@ const Topics = () => {
   const allquiz = quizData.data;
 
   return (
-    <div className="sm:grid sm:grid-cols-1 md:grid-cols-3 mx-5 pt-8">
+    <div className="sm:grid sm:grid-cols-1 md:grid-cols-4 mx-5 pt-8">
       {allquiz.map((quiz) => (
         <QuizsCart quiz={quiz} key={quiz.id}></QuizsCart>
       ))}

@@ -5,7 +5,7 @@ import img3 from "./../../Images/5692030.png";
 const Header = () => {
   return (
     <div>
-      <div className="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <div className="shadow p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
           <Link to="#" className="flex items-center">
             <img src={img3} className="mr-3 h-6 sm:h-10" alt="..." />

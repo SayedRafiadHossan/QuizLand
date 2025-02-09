@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img from "./../../Images/ezgif.com-gif-maker.jpg";
+import img from "./../../Images/quiz.jpg";
 import img2 from "./../../Images/92377-quiz-mode.gif";
 import Topics from "../Topics/Topics";
 
